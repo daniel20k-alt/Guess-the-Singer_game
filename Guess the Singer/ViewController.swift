@@ -16,11 +16,12 @@ class ViewController: UIViewController {
     
     var singers = [String]()
     var score = 0
+    var correctAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        singers += ["drake", "ed_sheeran", "eminem", "james_blunt", "jay_sean", "lil_wayne", "marron_5", "selena_gomez", "taylor_swift"]
+        singers += ["drake", "ed_sheeran", "eminem", "james_blunt", "jay_sean", "lil_wayne", "maroon_5", "selena_gomez", "taylor_swift"]
         
         // setting the borderWidth of the tables containing the Singer pictures
         button1.layer.borderWidth = 1
@@ -36,9 +37,18 @@ class ViewController: UIViewController {
     }
 
     func askQuestion() {
+
+        singers.shuffle() // this shuffles the array, and its going to show each time new singers on the first 3 positions
+        correctAnswer = Int.random(in: 0...2) //
+
         button1.setImage(UIImage(named: singers[0]), for: .normal)
         button2.setImage(UIImage(named: singers[1]), for: .normal)
         button3.setImage(UIImage(named: singers[2]), for: .normal)
+        
+        // setting the title up on the top
+        title = singers[correctAnswer].uppercased()
+        
+
     }
 }
 
