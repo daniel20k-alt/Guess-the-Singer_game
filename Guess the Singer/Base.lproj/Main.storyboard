@@ -15,26 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMc-aY-2ip">
-                                <rect key="frame" x="129" y="334" width="250" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="music_background"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-3H-eGQ">
-                                <rect key="frame" x="138" y="564" width="250" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="music_background"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-Lf-FOC">
-                                <rect key="frame" x="79" y="56" width="250" height="200"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-Lf-FOC">
+                                <rect key="frame" x="82" y="100" width="250" height="200"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="music_background"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-3H-eGQ">
+                                <rect key="frame" x="82" y="520" width="250" height="200"/>
+                                <state key="normal" image="music_background"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMc-aY-2ip">
+                                <rect key="frame" x="82" y="310" width="250" height="200"/>
                                 <state key="normal" image="music_background"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="G5u-yN-fFe"/>
-                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MF7-Ub-N71"/>
+                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3QK-iU-TQh"/>
+                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="centerX" secondItem="zMc-aY-2ip" secondAttribute="centerX" id="5jJ-d4-zE5"/>
+                            <constraint firstItem="zMc-aY-2ip" firstAttribute="top" secondItem="EKS-Lf-FOC" secondAttribute="bottom" constant="10" id="Drx-FE-W2H"/>
+                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="top" secondItem="zMc-aY-2ip" secondAttribute="bottom" constant="10" id="Ezq-Yo-X2V"/>
+                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="fMh-aP-0mb"/>
+                            <constraint firstItem="zMc-aY-2ip" firstAttribute="centerX" secondItem="EKS-Lf-FOC" secondAttribute="centerX" id="nOC-aO-ZHh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,6 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="music_background" width="500" height="330"/>
+        <image name="music_background" width="250" height="200"/>
     </resources>
 </document>
