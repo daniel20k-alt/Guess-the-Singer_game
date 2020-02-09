@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
@@ -35,12 +35,12 @@ class ViewController: UIViewController {
         
         askQuestion()
     }
-
-    func askQuestion() {
-
+    
+    func askQuestion(action: UIAlertAction! = nil) {
+        
         singers.shuffle() // this shuffles the array, and its going to show each time new singers on the first 3 positions
         correctAnswer = Int.random(in: 0...2) //
-
+        
         button1.setImage(UIImage(named: singers[0]), for: .normal)
         button2.setImage(UIImage(named: singers[1]), for: .normal)
         button3.setImage(UIImage(named: singers[2]), for: .normal)
@@ -48,7 +48,28 @@ class ViewController: UIViewController {
         // setting the title up on the top
         title = singers[correctAnswer].uppercased()
         
-
+    }
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        var title: String
+        
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            score += 1
+        } else {
+            title = "Wrong"
+            score -= 1
+        }
+        
+        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+        
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        
+        // askQuestion is the method to run after displaying the UIAlert
+            
+            present(ac, animated: true)
+        
+        
     }
 }
 
