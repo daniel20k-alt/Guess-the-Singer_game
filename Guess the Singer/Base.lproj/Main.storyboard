@@ -16,36 +16,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKS-Lf-FOC">
-                                <rect key="frame" x="82" y="100" width="250" height="200"/>
+                                <rect key="frame" x="82" y="64" width="250" height="200"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="music_background"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0a4-Df-iFT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-3H-eGQ">
-                                <rect key="frame" x="82" y="520" width="250" height="200"/>
-                                <state key="normal" image="music_background"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydY-YA-l3W"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMc-aY-2ip">
-                                <rect key="frame" x="82" y="310" width="250" height="200"/>
+                                <rect key="frame" x="82" y="286" width="250" height="200"/>
                                 <state key="normal" image="music_background"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EV-jc-2il"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV7-3H-eGQ">
+                                <rect key="frame" x="82" y="505" width="250" height="200"/>
+                                <state key="normal" image="music_background"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydY-YA-l3W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3QK-iU-TQh"/>
-                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="centerX" secondItem="zMc-aY-2ip" secondAttribute="centerX" id="5jJ-d4-zE5"/>
-                            <constraint firstItem="zMc-aY-2ip" firstAttribute="top" secondItem="EKS-Lf-FOC" secondAttribute="bottom" constant="10" id="Drx-FE-W2H"/>
-                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="top" secondItem="zMc-aY-2ip" secondAttribute="bottom" constant="10" id="Ezq-Yo-X2V"/>
-                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="fMh-aP-0mb"/>
-                            <constraint firstItem="zMc-aY-2ip" firstAttribute="centerX" secondItem="EKS-Lf-FOC" secondAttribute="centerX" id="nOC-aO-ZHh"/>
+                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2Td-aB-veW"/>
+                            <constraint firstItem="zMc-aY-2ip" firstAttribute="top" secondItem="EKS-Lf-FOC" secondAttribute="bottom" constant="22" id="3qJ-4p-GLG"/>
+                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="CZu-3j-aBt"/>
+                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="OU1-Kq-XZG"/>
+                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="top" secondItem="zMc-aY-2ip" secondAttribute="bottom" constant="19" id="Q9e-pJ-fFb"/>
+                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIG-0o-kky"/>
+                            <constraint firstItem="zMc-aY-2ip" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="hbY-RQ-BTa"/>
+                            <constraint firstItem="zMc-aY-2ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rs3-Nv-gBr"/>
+                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w9X-Xb-gKo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -66,7 +69,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FzT-0Y-Ni4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOJ-8F-1Yw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
