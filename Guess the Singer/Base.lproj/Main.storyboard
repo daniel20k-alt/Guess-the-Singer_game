@@ -42,11 +42,8 @@
                         <constraints>
                             <constraint firstItem="EKS-Lf-FOC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2Td-aB-veW"/>
                             <constraint firstItem="zMc-aY-2ip" firstAttribute="top" secondItem="EKS-Lf-FOC" secondAttribute="bottom" constant="22" id="3qJ-4p-GLG"/>
-                            <constraint firstItem="EKS-Lf-FOC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="CZu-3j-aBt"/>
-                            <constraint firstItem="fV7-3H-eGQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="OU1-Kq-XZG"/>
                             <constraint firstItem="fV7-3H-eGQ" firstAttribute="top" secondItem="zMc-aY-2ip" secondAttribute="bottom" constant="19" id="Q9e-pJ-fFb"/>
                             <constraint firstItem="EKS-Lf-FOC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIG-0o-kky"/>
-                            <constraint firstItem="zMc-aY-2ip" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.271739" id="hbY-RQ-BTa"/>
                             <constraint firstItem="zMc-aY-2ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rs3-Nv-gBr"/>
                             <constraint firstItem="fV7-3H-eGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w9X-Xb-gKo"/>
                         </constraints>
@@ -69,7 +66,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FzT-0Y-Ni4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xOJ-8F-1Yw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
